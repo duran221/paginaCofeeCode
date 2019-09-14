@@ -364,6 +364,9 @@ ul, li {
 	top: 0;
 	transition: top 0.3s ease-in-out;
 }
+
+
+
 .fancybox-toolbar button {
 	display: none !important;
 }
