@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffee Code - Inicio</title>
+
+    <!--Enlaces a herramientas CSS-->
+    <link rel="stylesheet" type="text/css" href="css/responsive-style.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/boostrap.css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!--Scripts de interracción de la página-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/all-plugins.js"></script>
+    <script type="text/javascript" src="js/plugin-active.js"></script>
+
+</head>
+
+<body data-offset="150">
+    <!--Contenedor principal de página-->
+    <section id="MainContainer">
+
+        <!--Encabezado de página-->
+        <header id="Header" class="Header">
+            
+            <!--Menú de navegación principal de la página-->
+            <nav class="main-navigation" id="main-navigation-menu">
+                <!--Items equipos de escritorio-->
+                <div class="container clearfix" id="container-nav-desktop">
+
+                    
+                    <div class="main-menu hidden-md-down float-md-left text-light">
+                        <!--Con la propiedad 'hidden-md-down' se obtiene un ocultamiento de el menú de escritorio
+                        cuando este detecta resoluciones inferiores tales como las de dispositivos moviles-->
+
+                        <!--Items de el menú principal-->
+                        <ul class="menu-list" id="menu-items">
+                            <li class="nav-link">Inicio</li>
+                            <li class="nav-link">Portafolio</li>
+                            <li class="nav-link">Acerca De</li>
+                            <li class="nav-link">Contáctanos</li>
+                        </ul>
+
+                    </div>
+
+                    <!--Logo de nuestra compañía-->
+                    <div class="site-logo-wrap">
+
+                            <a class="logo float-lg-right" href="#">
+                                <img src="img/logo.png" alt="Design Studio">
+                            </a>
+                        </div>
+    
+
+                </div>
+
+                <!--Lista de menú responsive-->
+                <div class="mobile-menu hidden-lg-up" id="mobile-nav">
+       
+                    <ul class="mobile-menu-list" id="menu-items-mobiles">
+                        <li class="nav-link">Inicio</li>
+                        <li class="nav-link">Portafolio</li>
+                        <li class="nav-link">Acerca De</li>
+                        <li class="nav-link">Contáctanos</li>
+                    </ul>
+
+                </div>
+    
+            </nav>
+
+        </header>
+
+        <!--En esta sección se ubica la imagen de portada y descripción principal de la página-->
+        <section id="HeroBanner">
+            
+            <div class="hero-content">
+                <h1>Sitio Oficial</h1>
+
+                <p class="text-capitalize">
+                    Contamos con un equipo de profesionales altamente capacitados a tu disposición.
+                </p>
+
+                <a href="#" class="hero-cta">Comencemos</a>
+
+            </div>
+
+        </section>
+
+        <!--Nuestro portafolio de servicios-->
+        <section id="Portfolio">
+
+                <div class="container">
+                    <div class="block-heading">
+                        <h2 class="text-capitalize text-xl-center">Nuestro Portafolio de servicios</h2>
+
+                        <p class="text-capitalize text-info">
+                            Un portafolio pensado para satisfacer las necesidades actuales
+                        </p>
+                    </div>
+
+                    <!--Contiene los servicios que ofrecemos-->
+
+                    <div class="portfolio-wrapper clearfix">
+                        <a class="each-portfolio">
+                        <img src="img/desarrollo.jpg" alt="p-one">
+                        <div class="hover-cont-wrap">
+
+                            <div class="hover-cont-block">
+                               <h5 class="p-title text-monospace text-dark text-capitalize">Desarrollo De Software</h5>
+                                <div class="p-desc">
+
+                                </div>
+
+                            </div>
+                        </div>
+                       </a>
+                        <a class="each-portfolio">
+                        <img src="img/Base-de-datos.jpg" alt="p-one">
+                        <div class="hover-cont-wrap">
+                            <div class="hover-cont-block">
+                               <h5 class="p-title text-monospace text-dark text-capitalize">Soporte y desarrollo en bases de datos</h5>
+                               <div class="p-desc">
+
+                                </div>
+                            </div>
+                        </div>
+                       </a>
+                        <a class="each-portfolio">
+                        <img src="img/consultoria.jpg" alt="p-one">
+                        <div class="hover-cont-wrap">
+                           <div class="hover-cont-block">
+                               <h5 class="p-title text-monospace text-dark text-capitalize">Consultoría</h5>
+                               <div class="p-desc">
+
+                                </div>
+                            </div>
+                        </div>
+                       </a>
+                        <a class="each-portfolio">
+                        <img src="img/arquitectura.jpg" alt="p-one">
+                        <div class="hover-cont-wrap">
+                            <div class="hover-cont-block">
+                               <h5 class="p-title text-monospace text-dark text-capitalize">Análisis y diseño de soluciones (Arquitectura).</h5>
+                               <div class="p-desc">
+
+                                </div>
+                            </div>
+                        </div>
+                       </a>
+                        <a class="each-portfolio">
+                        <img src="img/requerimientos.jpg" alt="p-one">
+                        <div class="hover-cont-wrap">
+                            <div class="hover-cont-block">
+                               <h5 class="p-title text-monospace text-dark text-capitalize">Análisis funcional de requerimientos.</h5>
+                               <div class="p-desc">
+
+                                </div>
+                            </div>
+                        </div>
+                       </a>
+                        
+                       <a class="each-portfolio">
+                        <img src="img/soporte.jpg" alt="p-one">
+                        <div class="hover-cont-wrap">
+                            <div class="hover-cont-block">
+                               <h5 class="p-title text-monospace text-dark text-capitalize">Soporte y asistencia técnica</h5>
+                               <div class="p-desc">
+
+                                </div>
+                            </div>
+                        </div>
+                       </a>
+
+                    </div>
+                </div>
+            </section>
+            
+
+        
+        <!--Contenido secundario-->
+        <aside>
+            
+
+        </aside>
+
+        <!--Pié de pagina-->
+        <footer id="Footer">
+
+            <div class="container">
+
+
+            </div>
+
+        </footer>
+
+    </section>
+
+</body>
+</html>
