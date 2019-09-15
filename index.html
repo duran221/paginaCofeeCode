@@ -28,53 +28,36 @@
 
         <!--Encabezado de página-->
         <header id="Header" class="Header">
-            
-            <!--Menú de navegación principal de la página-->
-            <nav class="main-navigation" id="main-navigation-menu">
-                <!--Items equipos de escritorio-->
-                <div class="container clearfix" id="container-nav-desktop">
+       
+                <nav class="navbar navbar-dark navbar-expand-lg float-lg-right">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <!--Con la propiedad 'hidden-md-down' se obtiene un ocultamiento de el menú de escritorio
+                            cuando este detecta resoluciones inferiores tales como las de dispositivos moviles-->
+                            <div class="navbar-nav">                        <!--Items de el menú principal-->
+                        
+                                <a class="nav-link active" data-target="#HeroBanner">Inicio</a>
+                                <a class="nav-link" data-target="#Portfolio">Portafolio</a>
+                                <a class="nav-link" data-target="#Personal">Personal</a>
+                                <a class="nav-link" data-target="#AcercaDe">Acerca</a>
+                                <a class="nav-link" data-target="#Contactanos">Contáctanos</a>
 
-                    
-                    <div class="main-menu hidden-md-down float-md-left text-light">
-                        <!--Con la propiedad 'hidden-md-down' se obtiene un ocultamiento de el menú de escritorio
-                        cuando este detecta resoluciones inferiores tales como las de dispositivos moviles-->
+                            </div>
+       
+                        </div>
 
-                        <!--Items de el menú principal-->
-                        <ul class="menu-list" id="menu-items">
-                            <li><a class="nav-link active" data-target="#HeroBanner">Inicio</a></li>
-                            <li><a class="nav-link" data-target="#Portfolio">Portafolio</a></li>
-                            <li><a class="nav-link" data-target="#Personal">Personal</a></li>
-                            <li><a class="nav-link" data-target="#AcercaDe">Acerca De</a></li>
-                            <li><a class="nav-link" data-target="#Contactanos">Contáctanos</a></li>
+                         <!--Logo de nuestra compañía-->
+                      <div class="site-logo-wrap float-lefts">
 
-                        </ul>
-
-                    </div>
-
-                    <!--Logo de nuestra compañía-->
-                    <div class="site-logo-wrap">
-
-                            <a class="logo float-lg-right" href="#">
+                            <a class="logo float-right clearfix" href="#">
                                 <img src="img/logo.png" alt="Design Studio">
                             </a>
-                        </div>
+                        </div>         
     
-
-                </div>
-
-                <!--Lista de menú responsive-->
-                <div class="mobile-menu hidden-lg-up" id="mobile-nav">
-       
-                    <ul class="mobile-menu-list" id="menu-items-mobiles">
-                        <li class="nav-link">Inicio</li>
-                        <li class="nav-link">Portafolio</li>
-                        <li class="nav-link">Acerca De</li>
-                        <li class="nav-link">Contáctanos</li>
-                    </ul>
-
-                </div>
-    
-            </nav>
+                </nav> 
+                       
 
         </header>
 
