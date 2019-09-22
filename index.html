@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coffee Code - Inicio</title>
-
+    
+    
     <!--Enlaces a herramientas CSS-->
     <link rel="stylesheet" type="text/css" href="css/responsive-style.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -19,7 +20,8 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/all-plugins.js"></script>
     <script type="text/javascript" src="js/plugin-active.js"></script>
-
+    <script type="text/javascript" src="js/carrusel.js"></script>
+    <link href="img/logoCoffeeCode.png" rel="icon">
 </head>
 
 <body data-offset="150">
@@ -29,312 +31,530 @@
         <!--Encabezado de página-->
         <header id="Header" class="Header">
        
+                <!--Barra de navegación responsive de la página principal-->
                 <nav class="navbar navbar-dark navbar-expand-lg float-lg-right">
+                  
+                        <!--Boton menú de la barra de navegación (únicamente disponible en modo movil)-->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <!--Con la propiedad 'hidden-md-down' se obtiene un ocultamiento de el menú de escritorio
-                            cuando este detecta resoluciones inferiores tales como las de dispositivos moviles-->
-                            <div class="navbar-nav">                        <!--Items de el menú principal-->
+
+                        <!--Logo de nuestra compañía-->
+                        <div class="site-logo-wrap float-lefts">
+
+                            <a class="logo float-right clearfix" href="#">
+
+                                <img src="img/logoCoffeeCode.png" alt="Design Studio">
+
+                            </a>           
                         
+                        </div>
+                        
+                        <!--Div que permite colapsar la barra de navegación al pasar a formato movil-->
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            
+                            <div class="navbar-nav">
+                                <!--Lista de menú con los items de la barra de navegación-->
                                 <a class="nav-link active" data-target="#HeroBanner">Inicio</a>
                                 <a class="nav-link" data-target="#Portfolio">Portafolio</a>
                                 <a class="nav-link" data-target="#Personal">Personal</a>
-                                <a class="nav-link" data-target="#AcercaDe">Acerca</a>
-                                <a class="nav-link" data-target="#Contactanos">Contáctanos</a>
+                                <a class="nav-link" data-target="#AcercaDe">Nosotros</a>
+                                <a class="nav-link" data-target="#ContactUs">Contáctanos</a>
 
                             </div>
        
                         </div>
 
-                         <!--Logo de nuestra compañía-->
-                      <div class="site-logo-wrap float-lefts">
-
-                            <a class="logo float-right clearfix" href="#">
-                                <img src="img/logo.png" alt="Design Studio">
-                            </a>
-                        </div>         
-    
                 </nav> 
                        
-
         </header>
 
         <!--En esta sección se ubica la imagen de portada y descripción principal de la página-->
         <section id="HeroBanner">
             
             <div class="hero-content">
+                <!--Título principal de la página-->
                 <h1>Sitio Oficial CofeeCode</h1>
 
+                <!--Descripción de nuestra empresa, justo debajo del titulo principal-->
                 <p class="text-capitalize">
                     Contamos con un equipo de profesionales altamente capacitados a tu disposición.
                 </p>
-
-                <a href="#" class="hero-cta">Comencemos</a>
+                <!--Enlace a Portafolio de la barra de menú-->
+                <a href="#Portfolio" data-target="#Portfolio" class="hero-cta">Comencemos</a>
 
             </div>
 
         </section>
 
-        <!--Nuestro portafolio de servicios-->
+        <!--Sección que contiene Nuestro portafolio de servicios-->
         <section id="Portfolio">
 
-                <div class="container">
-                    <div class="block-heading">
-                        <h2 class="text-capitalize text-xl-center">Nuestro Portafolio de servicios</h2>
+              <div class="container">
+                  <div class="block-heading">
+                      <h2 class="text-capitalize text-xl-center">Nuestro Portafolio de servicios</h2>
 
-                        <p class="text-capitalize text-info">
-                            Un portafolio pensado para satisfacer las necesidades actuales
-                        </p>
-                    </div>
+                      <p class="text-capitalize text-info">
+                          Un portafolio pensado para satisfacer las necesidades actuales
+                      </p>
+              </div>
 
-                    <!--Contiene los servicios que ofrecemos-->
+              <!--Contiene los servicios que ofrecemos-->
+              <div class="portfolio-wrapper clearfix">
+                  <!--Este contenedor permite visualizar la información contenida en el item de Desarrollo de Software-->
+                  <a class="each-portfolio">
+                      <!--Imagen Sección de desarrollo del portafolio-->
+                      <img src="img/desarrollo.jpg" alt="p-one">
+                          <!---->
+                          <div class="hover-cont-wrap">
 
-                    <div class="portfolio-wrapper clearfix">
-                        <a class="each-portfolio">
-                        <img src="img/arquitectura.jpg" alt="p-one">
-                        <div class="hover-cont-wrap">
+                              <div class="hover-cont-block">
 
-                            <div class="hover-cont-block">
-                               <h5 class="p-title text-monospace text-dark text-capitalize">Desarrollo De Software</h5>
-                                <div class="p-desc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                    <div class="icon-div"><i class="fa fa-info" aria-hidden="true"></i></div>
+                                  <h5 class="p-title text-monospace text-dark text-capitalize">Desarrollo De Software</h5>
+                                    
+                                      <div class="p-desc">
+                                          <p>App, Web, Escritorio.</p>
+                                        
+                                          <div class="icon-div">
+                                            
+                                            <i class="fa fa-info" aria-hidden="true"></i>
+                                        
+                                          </div>
+                                    
+                                      </div>
+
                                 </div>
 
                             </div>
-                        </div>
-                       </a>
-                        <a class="each-portfolio">
-                        <img src="img/arquitectura.jpg" alt="p-one">
-                        <div class="hover-cont-wrap">
-                            <div class="hover-cont-block">
-                               <h5 class="p-title text-monospace text-dark text-capitalize">Soporte y desarrollo en bases de datos</h5>
-                               <div class="p-desc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                    <div class="icon-div"><i class="fa fa-info" aria-hidden="true"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                       </a>
-                        <a class="each-portfolio">
-                        <img src="img/consultoria.jpg" alt="p-one">
-                        <div class="hover-cont-wrap">
-                           <div class="hover-cont-block">
-                               <h5 class="p-title text-monospace text-dark text-capitalize">Consultoría</h5>
-                               <div class="p-desc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                    <div class="icon-div"><i class="fa fa-info" aria-hidden="true"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                       </a>
-                        <a class="each-portfolio">
-                        <img src="img/arquitectura.jpg" alt="p-one">
-                        <div class="hover-cont-wrap">
-                            <div class="hover-cont-block">
-                               <h5 class="p-title text-monospace text-dark text-capitalize">Análisis y diseño de soluciones.</h5>
-                               <div class="p-desc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                    <div class="icon-div"><i class="fa fa-info" aria-hidden="true"></i></div>
+                  </a>
+
+                  <a class="each-portfolio">
+                       
+                      <img src="img/bd.jpg" alt="p-one">
+                      <!--Cuadro de sección Soporte y desarrollo-->
+                      <div class="hover-cont-wrap">
+
+                          <div class="hover-cont-block">
+                             <h5 class="p-title text-monospace text-dark text-capitalize">Soporte y desarrollo en bases de datos</h5>
+                                 <div class="p-desc">
+                                      
+                                      <p>Gestor no-SQL: Mongo.</p>
+
+                                      <p>Gestores SQL: MySQL, PostgreSQL</p>
+                                      <div class="icon-div">
+
+                                          <i class="fa fa-info" aria-hidden="true"></i>
+
+                                      </div>
+                                  </div>
+                          </div>
+                      </div>
+
+                  </a>
+
+                  <a class="each-portfolio">
+
+                      <img src="img/consultoria.jpg" alt="p-one">
+                      
+                      <!--Seccion de consultoria-->
+                      <div class="hover-cont-wrap">
+                          <div class="hover-cont-block">
+
+                              <h5 class="p-title text-monospace text-dark text-capitalize">Consultoría</h5>
+                              <div class="p-desc">
+                                  <p>Aportamos soluciones concretas a cualquier organización que quiera sumarse a la transformación digital.</p>
+                                  <div class="icon-div">
+                                  
+                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                    
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+                  
+                  <a class="each-portfolio">
+                      <img src="img/requerimientos.jpg" alt="p-one">
+                      <div class="hover-cont-wrap">
+                          <!--Sección de analisis de diseño de soluciones-->
+                          <div class="hover-cont-block">
+                             <h5 class="p-title text-monospace text-dark text-capitalize">Análisis y diseño de soluciones.</h5>
+                             <div class="p-desc">
+                                  <!--Icono de 'información'-->
+                                  <div class="icon-div">
+                                      <i class="fa fa-info" aria-hidden="true"></i>
+                                  </div>
                                 
-                                </div>
-                            </div>
-                        </div>
-                       </a>
-                        <a class="each-portfolio">
-                        <img src="img/requerimientos.jpg" alt="p-one">
-                        <div class="hover-cont-wrap">
-                            <div class="hover-cont-block">
-                               <h5 class="p-title text-monospace text-dark text-capitalize">Análisis funcional de requerimientos.</h5>
-                               <div class="p-desc">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <div class="icon-div"><i class="fa fa-info" aria-hidden="true"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                       </a>
+                              </div>
+
+                          </div>
+                      </div>
+                  </a>
+
+                  <a class="each-portfolio">
+                      <img src="img/ArdyPi copia.jpg" alt="p-one">
+                      <!--Sección de proyectos con Microprocesadores.-->
+                      <div class="hover-cont-wrap">
+
+                          <div class="hover-cont-block">
+
+                             <h5 class="p-title text-monospace text-dark text-capitalize">Proyectos con microprocesadores.</h5>
+                             <div class="p-desc">
+                                  <p>Programamos y diseñamos circuitos.</p>
+                                  <div class="icon-div">
+                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                  </div>
+                              </div>
+
+                          </div>
+
+                      </div>
+                  </a>
                         
-                       <a class="each-portfolio">
-                        <img src="img/soporte.jpg" alt="p-one">
-                        <div class="hover-cont-wrap">
-                            <div class="hover-cont-block">
-                               <h5 class="p-title text-monospace text-dark text-capitalize">Soporte y asistencia técnica</h5>
-                               <div class="p-desc">
-                                    <p>Lorem ipsum dolor sit amet</p>
-                                    <div class="icon-div"><i class="fa fa-info" aria-hidden="true"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                       </a>
+                  <a class="each-portfolio">
 
-                    </div>
-                </div>
-            </section>
+                      <img src="img/soporte.jpg" alt="p-one">
+                      <!--Sección de asistencia técnica-->
+                      <div class="hover-cont-wrap">
+
+                          <div class="hover-cont-block">
+
+                              <h5 class="p-title text-monospace text-dark text-capitalize">Asistencia técnica</h5>
+                              <div class="p-desc">
+                                
+                                  <p>Estamos dipuestos a atender sus dificultades técnicas cada que lo necesite.</p>
+                                  <div class="icon-div">
+                                      <i class="fa fa-info" aria-hidden="true"></i>
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                      </div>
+                  </a>
+
+              </div>
+        </section>
             
-
-        
         <!--Acerca De nuestra empresa-->
         <aside>
-            <!-- Section: Features v.4 -->
+            <!--Sección 'Acerca De'-->
             <section id="AcercaDe">
 
-                <!-- Section heading -->
-                <h2 class="h1-responsive font-weight-bold text-center my-5">CofeeCode S.A.S</h2>
-                <!-- Section description -->
+                <!--Titulo Principal de la sección-->
+                <h2 class="h1-responsive font-weight-bold text-center my-5">¿Quiénes Somos?</h2>
+                <!-- Una Breve descripción -->
                 <p class="lead grey-text text-center w-responsive mx-auto mb-5">
-                    Somos un equipo de trabajo constituido en la ciudad de Manizales-Colombia
+
+                   CoffeeCode s.a.s. es una empresa joven dedicada al desarrollo de software con la capacidad de 
+                   llevar a cabo actividades de Análisis, diseño, construcción, pruebas e implementación de sistemas de información a la medida de las necesidades de nuestros clientes; nuestro enfoque de trabajo está basado en una metodología agíl llamada AgilUC.
+                   Somos un equipo capacitado para entender su negocio, ayudandole a convertir sus retos empresariales en una aplicación tecnológica. 
 
                 </p>
-            
-                <!-- Grid row -->
+          
+                <!-- Nuestra Misión Institucional -->
                 <div class="row">
-            
                     <!-- Grid column -->
                     <div class="col-md-4">
-                
                         <!-- Grid row -->
                         <div class="row mb-3">
-                
-                        <!-- Grid column -->
-                        <div class="col-2">
-                            <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
+                            <!-- Grid column -->
+                            <div class="col-2">
+                                <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
+                            </div>  
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+
+                                <h5 class="font-weight-bold mb-3">Misión Institucional</h5>
+                                    <p class="grey-text">
+                                        Proporcionar soluciones tecnológicas en el mundo del desarrollo de software con lineamientos técnicos y profesionales, apuntando al cumplimiento de las necesidades empresariales de nuestros clientes.
+                                    </p>
+
                             </div>
-                                <!-- Grid column -->
-                        
-                                <!-- Grid column -->
-                                <div class="col-10">
-                                    <h5 class="font-weight-bold mb-3">Misión Institucional</h5>
-                                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-                                    nam, aperiam minima assumenda deleniti hic.</p>
-                                </div>
-                                <!-- Grid column -->
-                    
-                            </div>
-                            <!-- Grid row -->
-                    
-                            <!-- Grid row -->
+                       
+                        </div>
+
+                        <!-- Nuestra Visión -->
                         <div class="row mb-3">
                 
                             <!-- Grid column -->
                             <div class="col-2">
                                 <i class="fas fa-2x fa-flask deep-purple-text"></i>
                             </div>
-                            <!-- Grid column -->
-                    
-                            <!-- Grid column -->
+                          
                             <div class="col-10">
-                                <h5 class="font-weight-bold mb-3">Experimental</h5>
-                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-                                nam, aperiam minima assumenda deleniti hic.</p>
+                                <h5 class="font-weight-bold mb-3">Visión</h5>
+                                <p class="grey-text">Para el 2021, ser una empresa reconocida a nivel regional y con proyecciones de ingresar y competir en mercados internacionales.</p>
                             </div>
-                            <!-- Grid column -->
                     
-                            </div>
-                            <!-- Grid row -->
-                            
+                        </div>
+                            <!-- Grid row -->            
                     </div>
-                    <!-- Grid column -->
                 
-                    <!-- Grid column -->
                     <div class="col-md-4 text-center">
-                        <img class="img-fluid" src="img/img_acercaDe.png"
-                        alt="Sample image">
+
+                        <img class="img-fluid" src="img/logoCoffeeCode.png"alt="Sample image">
+
                     </div>
-                    <!-- Grid column -->
-                
+                    
                     <!-- Grid column -->
                     <div class="col-md-4">
                 
-                        <!-- Grid row -->
-                        <div class="row mb-3">
-                
-                        <!-- Grid column -->
-                        <div class="col-2">
-                            <i class="far fa-2x fa-heart deep-purple-text"></i>
-                        </div>
-                        <!-- Grid column -->
-                
-                        <!-- Grid column -->
-                        <div class="col-10">
-                            <h5 class="font-weight-bold mb-3">Visión</h5>
-                            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-                            nam, aperiam minima assumenda deleniti hic.</p>
-                        </div>
-                        <!-- Grid column -->
-                
-                        </div>
-                        <!-- Grid row -->
-                
-                        <!-- Grid row -->
-                        <div class="row mb-3">
-                
-                        <!-- Grid column -->
-                        <div class="col-2">
-                            <i class="fas fa-2x fa-bolt deep-purple-text"></i>
-                        </div>
-                        <!-- Grid column -->
-                
-                        <!-- Grid column -->
-                        <div class="col-10">
-                            <h5 class="font-weight-bold mb-3">Gestión De Procesos</h5>
-                            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-                            nam, aperiam minima assumenda deleniti hic.</p>
-                        </div>
-                        <!-- Grid column -->
-                
+                        <div class="row mb-3">                
+                            <!-- Grid column -->
+                            <div class="col-2">
+                                <i class="far fa-2x fa-heart deep-purple-text"></i>
+                            </div>
+                    
+                            <div class="col-10">
+                                <h5 class="font-weight-bold mb-3">Valores</h5>
+                                <p class="grey-text justify-content-end">   
+                                    * Mejora Continua: Estar en constante actualización de conocimientos y herramientas que van surgiendo en el mercado.
+                                    * Responsabilidad: El asumir compromisos y dar cumplimiento a los  mismos, definen nuestro servicio.
+                                    * Colaboración: La comunicación constante con el cliente permite realizar mejoras continuas en el producto y de esta forma satisfacer las necesidades requeridas. 
+                                    * Servicio: Nuestro máximo objetivo es contar con clientes satisfechos, que se sientan a gusto con la atención de sus necesidades y la obtención del producto final. 
+                                    * Transparencia: El desarrollo de un trabajo limpio teniendo siempre en cuenta los requerimientos del cliente, nos permite ser honestos y sinceros en todo momento. 
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+                    
                         </div>
                         <!-- Grid row -->
-                
                     </div>
                     <!-- Grid column -->
-                
                 </div>
                     <!-- Grid row -->
-                
+            <!--Fin seccion Acerca De-->                
             </section>
-            <!-- Section: Features v.4 -->
 
         </aside>
 
+        <!--Nuestro equipo de trabajo-->
+        <section id="Personal">
+
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-capitalize text-xl-center">Equipo de Trabajo </h2>
+
+                        <p class="text-capitalize text-info">
+                            Nuestro equipo de trabajo está conformado por:
+                        </p>
+                <div class="row" >
+                
+                <!--Miniatura con la imagen de la gestora de proyectos-->
+                <figure class="snip1477">
+                    <img src="img/mafe copia.jpg" />
+                    <div class="title">
+                        <div>
+
+                          <h5>Gestora de Proyectos</h5>
+                        
+                        </div>
+                    </div>
+                    <figcaption>
+                        <p>Maria Fernanda Osorio Giraldo</p>
+                    </figcaption>
+                  
+                </figure>
+                <!--Figura del lider de desarrollo-->
+                <figure class="snip1477 hover"><img src="img/crisDuran1.jpg"  />
+                    <div class="title">
+                        <div>
+                            <h5>Lider de Desarrollo</h5>
+                        
+                        </div>
+                    </div>
+
+                    <figcaption>
+                        <p>Cristian Fernando Duran</p>
+                    </figcaption>
+                  
+                </figure>
+
+
+                <!--Miniatura del jefe analista y desarrollador-->
+                <figure class="snip1477"><img src="img/Leo copia.jpg"  />
+                    <div class="title">
+                        <div>
+                            <h5>Jefe Analista y Desarrollador</h5>
+                        
+                        </div>
+                    </div>
+
+                    <figcaption>
+                        <p>José Leonardo Cardona</p>
+                    </figcaption>
+                  
+                </figure>
+                <!--Miniatura del gestor de bases de datos-->
+                <figure class="snip1477"><img src="img/Cris copia.jpg"  />
+                    <div class="title">
+
+                        <div>
+                            <h5>Gestor de Base de Datos</h5>
+                        
+                        </div>
+                    </div>
+
+                    <figcaption>
+                        <p>Cristian Fernan Bustamante</p>
+                    </figcaption>
+              
+              </figure>
+              <!--Miniatura del Profesional en Testing-->
+              <figure class="snip1477"><img src="img/carito1.jpg"  />
+                  <div class="title">
+                      <div>
+                          <h5>Testing</h5>
+                      
+                      </div>
+                  </div>
+
+                  <figcaption>
+                      <p>Angie Carolina Infante</p>
+                  </figcaption>
+              
+              </figure>
+              <!--Miniatura con foto del desarrollador-->
+              <figure class="snip1477"><img src="img/juli copia.jpg"  />
+                  <div class="title">
+                      <div>
+                          <h5>Desarrollador</h5>
+                    
+                  </div>
+
+                  <figcaption>
+                      <p>Julian Andres Castellanos</p>
+                  </figcaption>
+                
+              </figure>
+
+          </section>
+
+          <!-- Contact us section starts here -->
+        <section id="ContactUs">
+            <div class="container contact-container">
+
+                <h3 class="contact-title">Contáctanos</h3>
+              
+                <div class="contact-outer-wrapper">
+                    <!--Sección Con datos importantes para contactar con nosotros-->
+                    <div class="address-block">
+                        <p class="add-title text-capitalize">Detalles De Contacto</p>
+                        <div class="c-detail">
+                            <span class="c-icon">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </span> 
+                            <span class="c-info text-capitalize">
+                                Barrio san jorge carrera 22 #50-31
+                            </span>
+
+                        </div>
+
+                        <div class="c-detail">
+                            <span class="c-icon">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </span>
+                            
+                            <span class="c-info">
+                                +57 314 514 7488
+                            </span>
+                        </div>
+                        <div class="c-detail">
+                            <span class="c-icon">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </span>
+                            
+                            <span class="c-info">
+                                coffeecode@gmail.com
+                            </span>
+                        </div>
+
+                    </div>
+                    <!--Sección que contiene el formulario para diligenciamiento de datos-->  
+                    <div class="form-wrap">
+                        <p class="add-title text-capitalize">
+                            Enviar un mensaje
+                        </p>
+                        <form>
+                            <!--El cliente escribe su nombre (Obligatorio)-->
+                            <div class="fname floating-label">
+
+                                <input type="text" class="floating-input" name="full name" id="full-name-field" required />
+                                <label for="full-name-field">Nombre Completo</label>
+
+                            </div>
+                            <!--Su email (Obligatorio)-->
+                            <div class="email floating-label">
+
+                                <input type="email" class="floating-input" name="email" id="mail-field" required/>
+                                <label for="mail-field">Correo</label>
+
+                            </div>
+                            <!--Diligencia un telefono de contacto (Opcional)-->
+                            <div class="contact floating-label">
+                                <input type="tel" class="floating-input" name="contact" id="contact-us-field" />
+                                <label for="contact-us-field">Télefono De Contacto</label>
+                            </div>
+                            <!--Digita el nombre de la compañía (Opcional)-->
+                            <div class="company floating-label">
+                                <input type="text" class="floating-input" name="company" id="company-field" />
+                                <label for="company-field">Compañía</label>
+                            </div>
+                            <!--Por último el mensaje con motivo de contacto-->
+                            <div class="user-msg floating-label">
+
+                                <textarea class="floating-input" name="user message" id="user-msg-field" required></textarea>
+                                <label for="user-msg-field" class="msg-label">Tú Mensaje</label>
+                            
+                            </div>
+
+                            <div class="submit-btn">
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
     </section>
 
-        <!--Pié de pagina-->
-        <footer id="Footer">
+    <!--Pié de pagina con información de contacto de nuestra empresa-->
+    <footer id="Footer">
+        <!--Contiene los iconos con accesos a las redes sociales de nuestra empresa-->
+        <div class="container">
+              <!-- Social buttons -->
+              <ul class="list-unstyled list-inline text-center">
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1" target="_blank" href="https://www.facebook.com/Coffee-Code-111536586896826/?modal=admin_todo_tour">
+                      <i class="fab fa-facebook-f fa-lg text-light"> </i>
+                    </a>
+                  </li>
 
-             <!-- Footer Elements -->
-  <div class="container">
+                  <li class="list-inline-item">
 
-        <!-- Social buttons -->
-        <ul class="list-unstyled list-inline text-center">
-          <li class="list-inline-item">
-            <a class="btn-floating btn-fb mx-1" target="_blank" href="https://www.facebook.com/Coffee-Code-111536586896826/?modal=admin_todo_tour">
-              <i class="fab fa-facebook-f fa-lg text-info"> </i>
-            </a>
-          </li>
+                      <a class="btn-floating btn-tw mx-1" target="_blank" href="https://www.facebook.com/Coffee-Code-111536586896826/?modal=admin_todo_tour">
+                          <i class="fab fa-instagram fa-lg text-light "> </i>
+                      </a>
 
-          <li class="list-inline-item">
-            <a class="btn-floating btn-tw mx-1" target="_blank" href="https://www.facebook.com/Coffee-Code-111536586896826/?modal=admin_todo_tour">
-              <i class="fab fa-instagram fa-lg text-info "> </i>
-            </a>
-          </li>
+                  </li>
 
-        </ul>
-        <!-- Social buttons -->
-    
-      </div>
-      <!-- Footer Elements -->
-    
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3  text-light">2019 ©CofeeCode: Todos los derechos reservados.
-        <a href=""> coffecode.com</a>
-      </div>
-      <!-- Copyright -->
-    
-        </footer>
-
-    </section>
+              </ul>
+          
+        </div>
+          
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3  text-light">2019 ©CofeeCode: Todos los derechos reservados.
+            <a href=""> coffecode.com</a>
+        </div>
+    <!--Fín Pie de pagina-->
+    </footer>
 
 </body>
+
 </html>

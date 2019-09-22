@@ -43,4 +43,9 @@ $(document).ready(function() {
           $("#Header").removeClass("header-fixed");
       }
   });
+  /* Demo purposes only */
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  });
 });
