@@ -343,94 +343,99 @@
                         </p>
                 <div class="row" >
                 
-                <!--Miniatura con la imagen de la gestora de proyectos-->
-                <figure class="snip1477">
-                    <img src="img/mafe copia.jpg" />
-                    <div class="title">
-                        <div>
+            <div class="container">
 
-                          <h5>Gestora de Proyectos</h5>
+                <div class="row">
+
+                    <div class="col align-items-sm-center">
+
+                        <!--Contenedor del carrusel que contiene a los integrantes-->
+                        <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
                         
-                        </div>
-                    </div>
-                    <figcaption>
-                        <p>Maria Fernanda Osorio Giraldo</p>
-                    </figcaption>
-                  
-                </figure>
-                <!--Figura del lider de desarrollo-->
-                <figure class="snip1477 hover"><img src="img/crisDuran1.jpg"  />
-                    <div class="title">
-                        <div>
-                            <h5>Lider de Desarrollo</h5>
-                        
-                        </div>
-                    </div>
-
-                    <figcaption>
-                        <p>Cristian Fernando Duran</p>
-                    </figcaption>
-                  
-                </figure>
-
-
-                <!--Miniatura del jefe analista y desarrollador-->
-                <figure class="snip1477"><img src="img/Leo copia.jpg"  />
-                    <div class="title">
-                        <div>
-                            <h5>Jefe Analista y Desarrollador</h5>
-                        
-                        </div>
-                    </div>
-
-                    <figcaption>
-                        <p>José Leonardo Cardona</p>
-                    </figcaption>
-                  
-                </figure>
-                <!--Miniatura del gestor de bases de datos-->
-                <figure class="snip1477"><img src="img/Cris copia.jpg"  />
-                    <div class="title">
-
-                        <div>
-                            <h5>Gestor de Base de Datos</h5>
-                        
-                        </div>
-                    </div>
-
-                    <figcaption>
-                        <p>Cristian Fernan Bustamante</p>
-                    </figcaption>
-              
-              </figure>
-              <!--Miniatura del Profesional en Testing-->
-              <figure class="snip1477"><img src="img/carito1.jpg"  />
-                  <div class="title">
-                      <div>
-                          <h5>Testing</h5>
-                      
-                      </div>
-                  </div>
-
-                  <figcaption>
-                      <p>Angie Carolina Infante</p>
-                  </figcaption>
-              
-              </figure>
-              <!--Miniatura con foto del desarrollador-->
-              <figure class="snip1477"><img src="img/juli copia.jpg"  />
-                  <div class="title">
-                      <div>
-                          <h5>Desarrollador</h5>
-                    
-                  </div>
-
-                  <figcaption>
-                      <p>Julian Andres Castellanos</p>
-                  </figcaption>
+                                <!--Apuntadores: indica en qué posición está la imagen, además de cervir como enlace-->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                                    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                                    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                                    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                                </ol>
+                                <!--/Fin de los indicadores-->
                 
-              </figure>
+                                <!--Imagenes Deslizables-->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <div class="view">
+                                            <img class="d-block w-100" src="img/mafe.jpg" alt="Gestora De Proyectos">
+                                            <div class="mask rgba-black-light"></div>
+                                        </div>
+                
+                                        <div class="carousel-caption">
+                                            <h3 class="h3-responsive text-capitalize">Gestora De Proyectos</h3>
+                                            <p>Maria Fernanda Osorio Giraldo</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="carousel-item">
+                                    <!--Mask color-->
+                                        <div class="view">
+                                            <img class="d-block w-100" src="img/crisDuran.jpg" alt="Lider De Desarrollo">
+                                            <div class="mask rgba-black-light"></div>
+                                        </div>
+                
+                                        <div class="carousel-caption">
+                
+                                            <h3 class="h3-responsive text-capitalize">Lider De Desarrollo</h3>
+                                            <p>Cristian Fernando Duran Londoño</p>
+                                    
+                                        </div>
+                        
+                                    </div>
+                        
+                                    <div class="carousel-item">
+                                        <!--Mask color-->
+                                        <div class="view">
+                
+                                            <img class="d-block w-100" src="img/Leo.jpg" alt="Jefe Analista">
+                                            <div class="mask rgba-black-light"></div>
+                            
+                                        </div>
+                            
+                                        <div class="carousel-caption">
+                                            <h3 class="h3-responsive">Jefe Analista</h3>
+                                            <p>José Leonardo Cardona</p>
+                                        </div>
+                
+                                    </div>
+                            
+                                </div>
+                
+                                <!--Controles de desplazamiento, anterior y siguiente en el carrusel de imágenes-->
+                                <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                            
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                            
+                                <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                            
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Siguiente</span>
+                            
+                                </a>
+                
+                            </div>                    
 
+                    </div>
+
+
+                </div>
+
+            </div>
+             
+                    
+          
           </section>
 
           <!-- Contact us section starts here -->
