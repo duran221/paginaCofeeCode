@@ -715,7 +715,7 @@ h1 {
 /*Estilos de la galeria*/
 
 .galeria {
-	width: 90%;
+	width: 50%;
 	margin: auto;
 	list-style: none;
 	padding: 20px;
@@ -731,8 +731,8 @@ h1 {
 }
 
 .galeria img {
-	width: 150px;
-	height: 100px;
+	width: 50px;
+	height: 20px;
 }
 
 /*Estilos del modal*/
@@ -760,7 +760,7 @@ h1 {
 }
 
 .imagen {
-	width: 100%;
+	width: 50%;
 	height: 50%;
 	
 	display: flex;
@@ -782,9 +782,9 @@ h1 {
 }
 
 .imagen img {
-	width: 500px;
-	height: 100%;
-	max-width: 100%;
+	width: 50px;
+	height: 50%;
+	max-width: 50%;
 	border: 7px solid #fff;
 	box-sizing: border-box;
 }

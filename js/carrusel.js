@@ -27,7 +27,7 @@ $("#slidebox").jCarouselLite({
     scroll: 1,
     circular: true,
     auto:5000,
-    speed:500,        
+    speed:1000,        
     btnGo:
         [".1", ".2",
         ".3", ".4",".5",".6",".7"],
