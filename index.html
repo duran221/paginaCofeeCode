@@ -8,20 +8,29 @@
     
     
     <!--Enlaces a herramientas CSS-->
-    <link rel="stylesheet" type="text/css" href="css/responsive-style.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/boostrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="vista/css/responsive-style.css">
+    <link rel="stylesheet" type="text/css" href="vista/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="vista/css/boostrap.css">
     <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
 
     <!--Iconos Boostrap 4-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <!--Scripts de interracción de la página-->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/all-plugins.js"></script>
-    <script type="text/javascript" src="js/plugin-active.js"></script>
-    <script type="text/javascript" src="js/carrusel.js"></script>
-    <link href="img/logoCoffeeCode.png" rel="icon">
+    <script type="text/javascript" src="vista/libs/jquery-3.2.1.min.js"></script>
+    <!--Los dos scripts importados acontinuación entre otras funcionalidades, permiten crear la sombra que aparece en la barra de nav-->
+    <script type="text/javascript" src="vista/libs/all-plugins.js"></script>
+    <script type="text/javascript" src="vista/libs/plugin-active.js"></script>
+    <!--Importacion libreria de notificaciones Toastr-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <!--Script de envio de correo electronico-->
+    <script type="module" src="vista/js/envioCorreo.js"></script>
+
+    <link href="vista/img/logoCoffeeCode.png" rel="icon">
+        
 </head>
 
 <body data-offset="150">
@@ -44,7 +53,7 @@
 
                             <a class="logo float-right clearfix" href="#">
 
-                                <img src="img/logoCoffeeCode.png" alt="Design Studio">
+                                <img src="vista/img/logoCoffeeCode.png" alt="Design Studio">
 
                             </a>           
                         
@@ -104,7 +113,7 @@
                   <!--Este contenedor permite visualizar la información contenida en el item de Desarrollo de Software-->
                   <a class="each-portfolio">
                       <!--Imagen Sección de desarrollo del portafolio-->
-                      <img src="img/desarrollo.jpg" alt="p-one">
+                      <img src="vista/img/desarrollo.jpg" alt="p-one">
                           <!---->
                           <div class="hover-cont-wrap">
 
@@ -130,7 +139,7 @@
 
                   <a class="each-portfolio">
                        
-                      <img src="img/bd.jpg" alt="p-one">
+                      <img src="vista/img/bd.jpg" alt="p-one">
                       <!--Cuadro de sección Soporte y desarrollo-->
                       <div class="hover-cont-wrap">
 
@@ -154,7 +163,7 @@
 
                   <a class="each-portfolio">
 
-                      <img src="img/consultoria.jpg" alt="p-one">
+                      <img src="vista/img/consultoria.jpg" alt="p-one">
                       
                       <!--Seccion de consultoria-->
                       <div class="hover-cont-wrap">
@@ -174,7 +183,7 @@
                   </a>
                   
                   <a class="each-portfolio">
-                      <img src="img/requerimientos.jpg" alt="p-one">
+                      <img src="vista/img/requerimientos.jpg" alt="p-one">
                       <div class="hover-cont-wrap">
                           <!--Sección de analisis de diseño de soluciones-->
                           <div class="hover-cont-block">
@@ -193,7 +202,7 @@
                   </a>
 
                   <a class="each-portfolio">
-                      <img src="img/ArdyPi copia.jpg" alt="p-one">
+                      <img src="vista/img/ArdyPi copia.jpg" alt="p-one">
                       <!--Sección de proyectos con Microprocesadores.-->
                       <div class="hover-cont-wrap">
 
@@ -214,7 +223,7 @@
                         
                   <a class="each-portfolio">
 
-                      <img src="img/soporte.jpg" alt="p-one">
+                      <img src="vista/img/soporte.jpg" alt="p-one">
                       <!--Sección de asistencia técnica-->
                       <div class="hover-cont-wrap">
 
@@ -296,7 +305,7 @@
                 
                     <div class="col-md-4 text-center">
 
-                        <img class="img-fluid" src="img/logoCoffeeCode.png"alt="Sample image">
+                        <img class="img-fluid" src="vista/img/logoCoffeeCode.png"alt="Sample image">
 
                     </div>
                     
@@ -368,7 +377,7 @@
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
                                     <div class="view">
-                                        <img src="img/mafeOsorio.jpg" alt="Gestora De Proyectos">
+                                        <img src="vista/img/mafeOsorio.jpg" alt="Gestora De Proyectos">
                                         <div class="mask rgba-black-light"></div>
                                     </div>
 
@@ -381,7 +390,7 @@
                                 <div class="carousel-item">
                                     <!--Mask color-->
                                     <div class="view">
-                                        <img src="img/CristianDuran.jpg" alt="Lider De Desarrollo">
+                                        <img src="vista/img/CristianDuran.jpg" alt="Lider De Desarrollo">
                                         <div class="mask rgba-black-light"></div>
                                     </div>
 
@@ -398,7 +407,7 @@
                                     <!--Mask color-->
                                     <div class="view">
 
-                                        <img src="img/JoseLeo.jpg" alt="Jefe Analista">
+                                        <img src="vista/img/JoseLeo.jpg" alt="Jefe Analista">
                                         <div class="mask rgba-black-light"></div>
 
                                     </div>
@@ -416,7 +425,7 @@
                                     <!--Mask color-->
                                     <div class="view">
 
-                                        <img src="img/caro.jpg" alt="Testing">
+                                        <img src="vista/img/caro.jpg" alt="Testing">
                                         <div class="mask rgba-black-light"></div>
 
                                     </div>
@@ -432,7 +441,7 @@
                                     <!--Mask color-->
                                     <div class="view">
 
-                                        <img src="img/crisB.jpg" alt="Testing">
+                                        <img src="vista/img/crisB.jpg" alt="Testing">
                                         <div class="mask rgba-black-light"></div>
 
                                     </div>
@@ -448,7 +457,7 @@
                                     <!--Mask color-->
                                     <div class="view">
 
-                                        <img src="img/JuliCas.jpg" alt="Desarrollador">
+                                        <img src="vista/img/JuliCas.jpg" alt="Desarrollador">
                                         <div class="mask rgba-black-light"></div>
 
                                     </div>
@@ -464,7 +473,7 @@
                                     <!--Mask color-->
                                     <div class="view">
 
-                                        <img src="img/caroQ.jpg" alt="Desarrollador">
+                                        <img src="vista/img/caroQ.jpg" alt="Desarrollador">
                                         <div class="mask rgba-black-light"></div>
 
                                     </div>
@@ -547,50 +556,50 @@
                         <p class="add-title text-capitalize">
                             Enviar un mensaje
                         </p>
-                        <form name="correo" method="post" action="email/correo.php">
+                        <form name="correo" method="post">
                             <!--El cliente escribe su nombre (Obligatorio)-->
                             <div class="fname floating-label">
 
-                                <input type="text" class="floating-input" name="nombre" id="nombre" required />
+                                <input type="text" class="floating-input" name="nombre" id="form-txt-nombre" required/>
                                 <label for="full-name-field">Nombre Completo</label>
 
                             </div>
                             <!--Su email (Obligatorio)-->
                             <div class="email floating-label">
 
-                                <input type="email" class="floating-input" name="email" id="email" required/>
+                                <input type="email" class="floating-input" name="email" id="form-txt-email" required/>
                                 <label for="mail-field">Correo</label>
 
                             </div>
                             <!--Diligencia un telefono de contacto (Opcional)-->
                             <div class="contact floating-label">
-                                <input type="tel" class="floating-input" name="contacto" id="contacto" />
+                                <input type="number" min="7" class="floating-input" name="contacto" id="form-txt-contacto" />
                                 <label for="contact-us-field">Télefono De Contacto</label>
                             </div>
                             <!--Digita el nombre de la compañía (Opcional)-->
                             <div class="company floating-label">
-                                <input type="text" class="floating-input" name="compania" id="compania" />
+                                <input type="text" class="floating-input" name="compania" id="form-txt-compania" />
                                 <label for="company-field">Compañía</label>
                             </div>
                             <!--Por último el mensaje con motivo de contacto-->
                             <div class="user-msg floating-label">
 
-                                <textarea class="floating-input" name="mensaje" id="mensaje" required></textarea>
+                                <textarea class="floating-input" name="mensaje" id="form-txt-mensaje" required></textarea>
                                 <label for="user-msg-field" class="msg-label">Tú Mensaje</label>
                             
                             </div>
 
                             <div class="submit-btn">
-                                <button type="submit">Enviar</button>
+                                <button type="submit" class="btn primary-btn" id="form-btn-enviar">Enviar Mensaje</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+
+            
         </section>
         
-
-
     </section>
 
     <!--Pié de pagina con información de contacto de nuestra empresa-->
