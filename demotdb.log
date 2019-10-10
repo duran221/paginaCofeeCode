@@ -1129,3 +1129,18 @@ Stack trace:
 
 )
 
+[09-Oct-2019 23:55:15 America/Bogota] Array
+(
+    [clase] => Envio
+    [accion] => enviarCorreo
+    [data] => Array
+        (
+            [name] => Cristian Fernando Duran Londoño
+            [email] => cristianfernandoduran@gmail.com
+            [phone] => 3123938213
+            [company] => Cofee Code
+            [message] => Buenas noches, estoy interesado en adquirir sus servicios
+        )
+
+)
+
